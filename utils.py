@@ -54,12 +54,8 @@ def k_means_labeling (row, r_33, r_66, f_33, f_66, m_33, m_66):
 
     if r <= r_33 and f >= f_66 and m >= m_66:
         return 'Champions'
-    elif r <= r_33 and f >= f_33:
-        return 'Loyal Customers'
     elif r <= r_66 and m >= m_66:
         return 'Potential Loyalists'
-    elif r > r_66 and f <= f_33:
-        return 'At Risk'
     else:
         return 'Hibernating'
 
