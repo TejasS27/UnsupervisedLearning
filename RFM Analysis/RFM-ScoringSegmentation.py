@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from utils import rfm_scoring, frequency_score, segment_assignment
-df = pd.read_excel("Online Retail.xlsx", sheet_name='Online Retail')
+df = pd.read_excel("RFM Analysis\Online Retail.xlsx", sheet_name='Online Retail')
 
 # Data Cleaning
 df = df.dropna(subset=['CustomerID'])
