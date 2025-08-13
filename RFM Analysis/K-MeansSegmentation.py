@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 from kneed import KneeLocator
 import matplotlib.pyplot as plt
 
-rfm = pd.read_csv('rfm_scoring.csv')
+rfm = pd.read_csv('RFM Analysis\rfm_scoring.csv')
 
 # Feature Scaling
 rfm_features = rfm[['Recency', 'Frequency', 'Monetary']].copy()
